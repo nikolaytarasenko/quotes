@@ -1,33 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400&subset=cyrillic');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #343a40;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #aab8c5;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  transition: 0.15s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a,
+a:visited {
+  color: #727cf5;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #727cf5;
+  margin: 10px;
+  padding: 5px 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875em;
+  font-weight: 300;
+  color: #727cf5;
+  border-radius: 3px;
+  transition: 0.15s ease-in-out;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button a {
+  color: #727cf5;
+}
+
+button:hover a {
+  color: #fff;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #727cf5;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 20px;
+  min-height: 150px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.App-quote-container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #37404a;
+  box-shadow: 0 0 35px 0 rgba(49,57,66,.5);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.App-quote-title {
+  color: #f1f1f1;
+  font-weight: 300;
+}
+
+a.App-quote-youtube-link {
+  color: #ca645c;
+  font-size: 0.75em;
 }
